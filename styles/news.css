@@ -20,6 +20,8 @@
 .article img {
     margin: 10px;
     border: black solid 2px;
+    height: 200px;
+    width: 400px;
 }
 
 .article h2 {
