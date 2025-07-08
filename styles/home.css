@@ -1,0 +1,38 @@
+/* main content */
+
+main {
+    border-bottom: var(--nav-border) solid 2px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+main img {
+    /* containing the image */
+    max-width: 100%;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.textBox {
+    padding: 10px;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+/* content containers */
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container img {
+    border: black 2px solid;
+    margin: 10px;
+}
+
+.content-container:first-of-type {
+    
+    border-bottom: var(--nav-border) solid 2px;
+}
