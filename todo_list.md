@@ -1,0 +1,1 @@
+- make the header and the nav sticky (stay in view at top)
