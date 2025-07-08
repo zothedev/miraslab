@@ -6,6 +6,7 @@
 :root {
     --nav-border: rgba(166, 166, 166, 0.346);
     --body-color: rgba(214, 212, 205, 0.571);
+    --active-page-highlight: rgb(43, 167, 167);
 }
 
 * {
@@ -52,6 +53,9 @@ header {
     padding: 20px 0;
     border-top: var(--nav-border) 2px solid;
     border-bottom: var(--nav-border) 2px solid;
+
+    font-size: 24px;
+
 }
 
 .navContainer a {
@@ -61,6 +65,10 @@ header {
 
 .shop {
     cursor: not-allowed;
+}
+
+.navContainer a.active {
+    color: var(--active-page-highlight);
 }
 
 /* footer */
@@ -90,4 +98,11 @@ footer {
     gap: 10px;
 
     padding: 20px 0;
+}
+
+/* fonts */
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
