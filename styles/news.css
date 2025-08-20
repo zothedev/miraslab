@@ -13,10 +13,6 @@
     margin: 10px;
 }
 
-.article .textBoxes {
-    border: black solid 2px;
-}
-
 .article img {
     margin: 10px;
     border: black solid 2px;
@@ -25,11 +21,15 @@
 }
 
 .article h2 {
-    font-size: 44px;
+    font-size: 4.4rem;
 }
 
 .article h3 {
-    font-size: 30px;
+    font-size: 3rem;
+}
+
+.article p {
+    font-size: 2rem;
 }
 
 .article:last-of-type {

@@ -3,6 +3,10 @@
 
 /* global */
 
+html {
+    font-size: 62.5%;
+}
+
 :root {
     --nav-border: rgba(166, 166, 166, 0.346);
     --body-color: rgb(239, 239, 239);
@@ -51,7 +55,7 @@ header {
     border-top: var(--nav-border) 2px solid;
     border-bottom: var(--nav-border) 2px solid;
 
-    font-size: 24px;
+    font-size: 3rem;
 
 }
 
@@ -104,12 +108,17 @@ footer {
     font-style: normal;
 }
 
+/* general */
+.content-container {
+    font-size: 2rem;
+}
+
 /* /////////////////// */
 /* ///desktop styles// */
 /* /////////////////// */
 
 /* large desktop styles */
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
     body {
         margin: 0 auto;
         max-width: 1200px;
@@ -146,4 +155,4 @@ footer {
         height: auto;
     }
     
-}
+} */
