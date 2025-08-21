@@ -27,6 +27,12 @@ body {
     background-color: var(--body-color);
 }
 
+/* main */
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* header */
 
 header {
@@ -55,7 +61,7 @@ header {
     border-top: var(--nav-border) 2px solid;
     border-bottom: var(--nav-border) 2px solid;
 
-    font-size: 3rem;
+    font-size: calc(1.5rem + 2vw);
 
 }
 
@@ -90,6 +96,7 @@ footer {
 
     padding: 10px 90px;
     border-bottom: var(--nav-border) solid 2px;
+
 }
 
 .info {
@@ -99,6 +106,8 @@ footer {
     gap: 10px;
 
     padding: 20px 0;
+    font-size: calc(1rem + 1vw);
+
 }
 
 /* fonts */
@@ -108,51 +117,3 @@ footer {
     font-style: normal;
 }
 
-/* general */
-.content-container {
-    font-size: 2rem;
-}
-
-/* /////////////////// */
-/* ///desktop styles// */
-/* /////////////////// */
-
-/* large desktop styles */
-/* @media screen and (min-width: 800px) {
-    body {
-        margin: 0 auto;
-        max-width: 1200px;
-        background-color: var(--body-color);
-        box-shadow: -20px 0 20px rgba(0, 0, 0, 0.4), 20px 0 20px rgba(0, 0, 0, 0.4);
-
-    }
-
-    html {
-        background: var(--desktop-margin-color);
-    }
-
-    nav li {
-        font-size: 44px;
-    }
-
-    p {
-        font-size: 24px;
-    }
-
-    .content-container img {
-        width: 80%;
-        height: auto;
-    }
-
-    .content-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .article img {
-        width: 75%;
-        height: auto;
-    }
-    
-} */
