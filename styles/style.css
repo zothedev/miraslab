@@ -45,7 +45,7 @@ header {
 .navContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     list-style-type: none;
@@ -54,13 +54,14 @@ header {
     border-top: var(--nav-border) 2px solid;
     border-bottom: var(--nav-border) 2px solid;
 
-    font-size: calc(1.5rem + 2vw);
+    font-size: calc(2rem + 1vw);
 
 }
 
-.navContainer a {
+.navContainer a, .navContainer>li {
     text-decoration: none;
     color: black;
+    padding: 0 20px;
 }
 
 .shop {
