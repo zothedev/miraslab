@@ -71,8 +71,12 @@ header {
     color: var(--active-page-highlight);
 }
 
-/* images */
-img {
+/* consistent main content */
+main {
+    font-size: calc(1.5rem + 1vw);
+}
+
+article img {
     width: calc(100% - 2rem);
 }
 
@@ -88,12 +92,15 @@ footer {
 
 .socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
 
     padding: 10px 90px;
     border-bottom: var(--nav-border) solid 2px;
+}
 
+.socials a {
+    padding: 10px 30px;
 }
 
 .info {
