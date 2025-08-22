@@ -14,11 +14,6 @@ main article {
     border: red solid 2px;
 }
 
-main img {
-    width: 100%;
-}
-
-
 .textBox {
     padding: 10px;
     margin: 10px;

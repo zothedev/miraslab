@@ -71,6 +71,11 @@ header {
     color: var(--active-page-highlight);
 }
 
+/* images */
+img {
+    width: calc(100% - 2rem);
+}
+
 /* footer */
 footer {
     /* keeps the footer at the bottom of page */
