@@ -9,8 +9,8 @@ html {
 
 :root {
     --nav-border: rgba(166, 166, 166, 0.346);
-    --body-color: rgb(239, 239, 239);
-    --desktop-margin-color: linear-gradient(to right, #808080, white, white, #808080);
+    --body-color: rgb(255, 255, 255);
+    --desktop-margin-grey: #808080;
     --active-page-highlight: rgb(43, 167, 167);
 }
 
@@ -49,10 +49,27 @@ header {
     align-items: center;
 
     list-style-type: none;
-
     padding: 20px 0;
-    border-top: var(--nav-border) 2px solid;
-    border-bottom: var(--nav-border) 2px solid;
+
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background: 
+        linear-gradient(to right, 
+            transparent 0%, 
+            transparent 25%, 
+            var(--nav-border) 25%, 
+            var(--nav-border) 75%, 
+            transparent 75%, 
+            transparent 100%
+        ) 0 0 / 100% 2px no-repeat,
+        linear-gradient(to right, 
+            transparent 0%, 
+            transparent 25%, 
+            var(--nav-border) 25%, 
+            var(--nav-border) 75%, 
+            transparent 75%, 
+            transparent 100%
+        ) 0 100% / 100% 2px no-repeat;
 
     font-size: calc(2rem + 1vw);
 
@@ -74,11 +91,11 @@ header {
 
 /* consistent main content */
 main {
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1rem + 1vw);
 }
 
 article img {
-    width: calc(100% - 2rem);
+    width: calc(100% - 10rem);
 }
 
 /* footer */
@@ -126,10 +143,26 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+    body, header, nav, footer {
+        background: linear-gradient(to right, 
+            var(--desktop-margin-grey) 0%, 
+            white 20%, 
+            var(--body-color) 20%, 
+            var(--body-color) 80%, 
+            white 80%, 
+            var(--desktop-margin-grey) 100%
+        );
+    }
+
     /* containing the main content 
     within the middle 50% of the page */
     main {
         width: 50%;
         margin: 0 auto;
+        background-color: var(--body-color);
+    }
+
+    header, nav, footer {
+        background-color: var(--body-color);
     }
 }
