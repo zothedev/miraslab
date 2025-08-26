@@ -50,27 +50,6 @@ header {
 
     list-style-type: none;
     padding: 20px 0;
-
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    background: 
-        linear-gradient(to right, 
-            transparent 0%, 
-            transparent 25%, 
-            var(--nav-border) 25%, 
-            var(--nav-border) 75%, 
-            transparent 75%, 
-            transparent 100%
-        ) 0 0 / 100% 2px no-repeat,
-        linear-gradient(to right, 
-            transparent 0%, 
-            transparent 25%, 
-            var(--nav-border) 25%, 
-            var(--nav-border) 75%, 
-            transparent 75%, 
-            transparent 100%
-        ) 0 100% / 100% 2px no-repeat;
-
     font-size: calc(2rem + 1vw);
 
 }
@@ -114,7 +93,6 @@ footer {
     flex-direction: row;
 
     padding: 10px 90px;
-    border-bottom: var(--nav-border) solid 2px;
 }
 
 .socials a {
@@ -162,7 +140,7 @@ footer {
         background-color: var(--body-color);
     }
 
-    header, nav, footer {
+    /* header, nav, footer {
         background-color: var(--body-color);
-    }
+    } */
 }
