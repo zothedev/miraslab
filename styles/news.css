@@ -2,13 +2,12 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: rgba(0, 0, 0, 0.501) 2px dashed;
     margin: 2vh 0 3vh 0;
 }
 
 
 article p {
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
 }
 
@@ -27,6 +26,6 @@ article h3 {
 
 }
 
-article:last-of-type {
-    border: none;
+article {
+    border-bottom: 1px solid #cccccc;
 }

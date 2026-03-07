@@ -3,6 +3,23 @@
 main {
     display: flex;
     flex-direction: column;
+
+    /* border-left: 2px grey solid;
+    border-right: 2px grey solid; */
+
+}
+
+main button a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+main button {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
 }
 
 main article {
@@ -11,6 +28,11 @@ main article {
     align-items: center;
     padding: calc(1rem + 0.5vh);
     /* border: red solid 2px; */
+}
+
+main article {
+    border-bottom: 1px solid #cccccc;
+    margin: 20px 0;
 }
 
 .textBox {
