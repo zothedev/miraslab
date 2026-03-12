@@ -3,10 +3,6 @@
 main {
     display: flex;
     flex-direction: column;
-
-    /* border-left: 2px grey solid;
-    border-right: 2px grey solid; */
-
 }
 
 main button a {
@@ -16,7 +12,8 @@ main button a {
 }
 
 main button {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 50px;
     padding: 10px;
     margin: 10px;
@@ -27,7 +24,9 @@ main article {
     flex-direction: column;
     align-items: center;
     padding: calc(1rem + 0.5vh);
-    /* border: red solid 2px; */
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 main article {
