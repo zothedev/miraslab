@@ -24,4 +24,35 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(article);
         }
     });
+
+    // Coming Soon Box handler
+    const shopTab = document.querySelector('.shop');
+    const comingSoonBox = document.getElementById('comingSoonBox');
+    let hideTimeout;
+
+    if (shopTab && comingSoonBox) {
+        shopTab.addEventListener('click', function(e) {
+            e.stopPropagation();
+            // Clear any existing timeout
+            clearTimeout(hideTimeout);
+            comingSoonBox.classList.remove('hidden', 'fade-out');
+            
+            // Hide after 3 seconds
+            hideTimeout = setTimeout(() => {
+                comingSoonBox.classList.add('fade-out');
+                setTimeout(() => {
+                    comingSoonBox.classList.add('hidden');
+                }, 500);
+            }, 3000);
+        });
+
+        // Close the box when clicking elsewhere
+        document.addEventListener('click', function(e) {
+            if (!shopTab.contains(e.target) && !comingSoonBox.contains(e.target)) {
+                clearTimeout(hideTimeout);
+                comingSoonBox.classList.add('hidden');
+                comingSoonBox.classList.remove('fade-out');
+            }
+        });
+    }
 });

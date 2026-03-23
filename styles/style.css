@@ -105,6 +105,62 @@ header {
     color: var(--active-page-highlight);
 }
 
+/* Coming Soon Box */
+.coming-soon-box {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: var(--active-page-highlight);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+    margin-top: 5px;
+    animation: slideDown 0.3s ease-out;
+}
+
+.coming-soon-box.hidden {
+    display: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.coming-soon-box.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+nav {
+    position: relative;
+}
+
+.shop {
+    position: relative;
+    display: inline-block;
+}
+
 /* consistent main content */
 main {
     font-size: calc(1rem + 1vw);
